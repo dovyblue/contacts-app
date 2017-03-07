@@ -1,0 +1,9 @@
+<% number = 1 %>
+<% @all_contacts.each do |contact| %>
+  <%= number %>
+  <p><%= contact.first_name %></p>
+  <p><%= contact.last_name %></p>
+  <p><%= contact.phone_number %></p>
+  -----------------
+  <% number += 1 %>
+<% end%>
